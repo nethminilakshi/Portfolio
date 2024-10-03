@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-Page</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      #table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .navbar {
+        background-color: #726e6e;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .nav-links {
+        list-style-type: none;
+        margin: 5px;
+        padding: 0;
+        display: flex;
+      }
+
+      .nav-links li {
+        float: none;
+      }
+
+      .nav-links a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+      .nav-links a:hover {
+        background-color: #575757;
+      }
+      .logo {
+        flex: 1; /* Takes up available space to push the menu items to the right */
+      }
+      .logo img {
+        height: 50px;
+        margin: 5px 20px;
+      }
+      .name {
+        font-size: 33px;
+        color: rgb(143, 140, 0);
+      }
+      .img {
+        width: 300px;
+        margin-left: 70px;
+      }
+      .content {
+        margin-left: 30px;
+      }
+      .header {
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/Assets/Images/my.jpg">Logo</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/pages/index.html">Home</a></li>
+          <li><a href="#aboutMe">AboutMe</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <br />
+    </header>
+    <main>
+      <hr />
+      <br />
+      <section id="home" class="home-css">
+        <div class="content">
+          <h4 style="color: rgba(218, 214, 11, 0.596)">Hello!</h4>
+          <h2>
+            I'm
+            <span class="name">Nethmi Nilakshi</span>
+          </h2>
+          <p style="font-size: 20px">
+            A well-rounded Fullstack Developer with a problem-solving
+            <br />mindset and a knack for innovative thinking.
+          </p>
+        </div>
+        <br />
+        <!-- <img
+          class="img"
+          src="/Assets/Images/my.jpg"
+          width="280px"
+          object-fit="cover"
+          alt="picture of Nethmi"
+        /> -->
+      </section>
+      <br />
+      <br />
+      <section id="aboutMe">
+        <h1 class="header">About Me</h1>
+        <br />
+        <br />
+
+        <table>
+          <tr height=" 55px">
+            <td width="350px" rowspan="5">
+              <img
+                class="img"
+                src="/Assets/Images/photo_2024-07-25_09-34-14.jpg"
+                object-fit="cover"
+                alt="picture of Nethmi"
+              />
+            </td>
+            <td style="font-size: 20px">
+              <b>Name:</b>
+            </td>
+            <td style="font-size: 18px">J.M Nethmi Nilakshi Jayawardhana</td>
+          </tr>
+          <tr height="55px">
+            <td style="font-size: 20px"><b>Date of birth:</b></td>
+            <td style="font-size: 18px">January 09,2002</td>
+          </tr>
+          <tr height="55px">
+            <td style="font-size: 20px"><b>Address:</b></td>
+            <td style="font-size: 18px">
+              Sooriyagahawatta, Hiriketiya, Dickwella
+            </td>
+          </tr>
+          <tr height="55px">
+            <td style="font-size: 20px"><b>Email:</b></td>
+            <td style="font-size: 18px">nilakshinethmi48@gmail.com</td>
+          </tr>
+          <tr height="55px">
+            <td style="font-size: 20px"><b>Phone:</b></td>
+            <td style="font-size: 18px">0773782028</td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <center>
+          <button type="button">Download CV</button>
+        </center>
+      </section>
+      <br />
+      <br />
+      <section id="resume">
+        <h1 class="header">Resume</h1>
+        <br />
+        <br />
+        <table width="450px">
+          <tr>
+            <td id="table">
+              <div>
+                <p><b>2023 - Present </b></p>
+                <h2>Diploma in Software Engineering</h2>
+                Institute of Software Engineering
+                <p>
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia. It is a paradisematic country,
+                  in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <table width="450px">
+          <tr>
+            <td id="table">
+              <div>
+                <p><b>2022 - 2023 </b></p>
+                <h2>Diploma in Information Technology</h2>
+                ICBT Southern Campus
+                <p>
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia. It is a paradisematic country,
+                  in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <table width="450px">
+          <tr>
+            <td id="table">
+              <div>
+                <p><b>2022 - 2023 </b></p>
+                <h2>Diploma in Advanced English</h2>
+                ICBT Southern Campus
+                <p>
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia. It is a paradisematic country,
+                  in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <table width="450px">
+          <tr>
+            <td id="table">
+              <div>
+                <p><b>2022 - 2023 </b></p>
+                <h2>UI/UX Designer</h2>
+                ICBT Southern Campus
+                <p>
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia. It is a paradisematic country,
+                  in which roasted parts of sentences fly into your mouth.
+                </p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <br />
+      <br />
+      <section id="skills">
+        <h1 class="header">My Skills</h1>
+        <br />
+        <h3>Java</h3>
+        <table width="280px">
+          <tr height="18px">
+            <td id="table"></td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <h3>JavaFX</h3>
+        <table width="320px">
+          <tr height="18px">
+            <td id="table"></td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <h3>Figma</h3>
+        <table width="350px">
+          <tr height="18px">
+            <td id="table"></td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <h3>MYSQL</h3>
+        <table width="380px">
+          <tr height="18px">
+            <td id="table"></td>
+          </tr>
+        </table>
+      </section>
+      <br />
+      <br />
+      <section id="projects">
+        <h1 class="header">
+          Projects
+          <br />
+        </h1>
+        <center>
+          <table>
+            <tr height="303px">
+              <td width="430px">
+                <img
+                  src="/Assets/Images/Restaurant Management System.png"
+                  width="400px"
+                  height="260px"
+                  object-fit="cover"
+                  alt="pic of Restaurant Management System"
+                />
+              </td>
+              <td width="300px">
+                <h2>Cinnamon-7 Restaurant Management System</h2>
+                This is the pos software that made for a seafood restaurant
+              </td>
+            </tr>
+            <tr height="330px">
+              <td>
+                <h2>Waste Management System</h2>
+                This project done for municipal Council Galle to manage waste
+              </td>
+              <td width="430px">
+                <img
+                  src="/Assets/Images/garbage managemenet.png"
+                  width="400px"
+                  height="260px"
+                  alt="pic of Waste Management System"
+                />
+              </td>
+            </tr>
+          </table>
+        </center>
+      </section>
+      <br />
+      <br />
+      <section id="contact">
+        <h1 class="header">Contact Me</h1>
+        <br />
+        <br />
+        <center>
+          <table width="700px" ; height="250px">
+            <tr>
+              <td>
+                <center>
+                  <img
+                    src="/Assets/Images/icons8-address-48 (1).png"
+                    width="80px"
+                    height="85px"
+                    alt="icon of address"
+                  />
+                  <h3>Address</h3>
+                  Sooriyagahawatta,
+                  <br />Hiriketiya, <br />Dickwella,
+                </center>
+              </td>
+              <td>
+                <center>
+                  <img
+                    src="/Assets/Images/icons8-phone-50.png"
+                    width="78px"
+                    height="75px"
+                    alt="icon of phone"
+                  />
+                  <h3>Contact Number</h3>
+                  +94773782028
+                </center>
+              </td>
+              <td>
+                <center>
+                  <img
+                    src="/Assets/Images/icons8-email-50.png"
+                    width="80px"
+                    height="80px"
+                    alt="icon of email"
+                  />
+                  <h3>Email</h3>
+                  nilakshinethmi48@gmail.com
+                </center>
+              </td>
+            </tr>
+          </table>
+        </center>
+        <br />
+        <br />
+        <br />
+        <br />
+        <center>
+          <table
+            height="380px"
+            width="700px"
+            style="background-color: rgb(224, 222, 222)"
+          >
+            <tr>
+              <td rowspan="6">
+                <!-- <img
+                  src="/Assets/Images/my.jpg"
+                  height="32 0px"
+                  width="350px"
+                  alt="picture of Nethmi"
+                /> -->
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" placeholder="Your Name" />
+              </td>
+            </tr>
+            <tr>
+              <td><input type="text" placeholder="Your Email" /></td>
+            </tr>
+            <tr>
+              <td>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Enter your message "
+                  rows="6"
+                  cols="30"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <center><button>Send Message</button></center>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </center>
+      </section>
+      <br />
+      <hr />
+    </main>
+    <footer>
+      <br />
+      <center>
+        <table width="50%" height="330px">
+          <tr height="60px">
+            <td width="200px"><h3>About</h3></td>
+            <td width="200px" style="text-align: center"><h3>Links</h3></td>
+            <td width="200px"><h3>Have a Questions</h3></td>
+          </tr>
+          <tr>
+            <td>
+              Fullstack Developer with a problem-solving mindset and a knack for
+              innovative thinking.
+            </td>
+            <td style="text-align: center">
+              <a href="/pages/index.html">Home</a>
+            </td>
+            <td>
+              Sooriyagahawatta,<br />
+              Hiriketiya, <br />Dickwella
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="4"></td>
+            <td style="text-align: center"><a href="#aboutMe">About</a></td>
+            <td>+943782028</td>
+          </tr>
+          <tr>
+            <td style="text-align: center"><a href="#resume">Resume</a></td>
+            <td>nilakshinethmi48@gmail.com</td>
+          </tr>
+          <tr>
+            <td style="text-align: center"><a href="#projects">Projects</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td style="text-align: center"><a href="#contact">Contact</a></td>
+            <td></td>
+          </tr>
+        </table>
+      </center>
+    </footer>
+  </body>
+</html>
