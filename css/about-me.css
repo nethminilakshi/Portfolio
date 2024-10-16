@@ -9,33 +9,60 @@
 .about-content {
   margin-left: 90px;
   margin-right: 90px;
+  position: relative;
   display: flex;
-  align-items: center;
-  padding: 20px;
+  justify-content: space-around;
 
-  /* margin: 70px 30px; */
+  padding: 20px;
 }
 
 .profile-pic {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 250px;
+  height: auto;
+  margin-top: 30px;
   object-fit: cover;
-  padding: 10px 40px 10px;
+  border: 2px solid #8750f7;
+  padding: 0px 0px 5px 0px;
+  border-radius: 10px;
+  position: relative;
+  transform: rotate(-7deg);
+  transition: transform 0.5s ease-in-out;
+}
+.shadow-box {
+  position: relative;
+  top: 435px;
+  left: 100px;
+  width: 90px;
+  height: 90px;
+  background-color: #652ed3dc;
+  filter: blur(10px);
+}
+.profile-pic:hover {
+  transform: rotate(0deg);
 }
 .about-info {
   display: flex;
   flex-direction: column;
-  padding: 0px 40px;
+  padding: 0px 70px;
+  margin-left: 60px;
 }
 .text-about {
-  margin: 30px 70px;
+  /* margin: 10px 70px 30px; */
   color: #8750f7;
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: 700;
-  /* box-shadow: 5px 8px #8750f7; */
 }
-table,
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+.description {
+  color: rgb(185, 185, 185);
+  font-size: 1.4rem;
+  margin: 0;
+}
+/* table,
 th,
 td {
   margin: 30px 0px;
@@ -51,4 +78,4 @@ td {
 }
 .details2 {
   width: 500px;
-}
+} */
