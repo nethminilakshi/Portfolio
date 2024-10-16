@@ -8,8 +8,6 @@ body {
 .site-container {
   position: absolute;
   top: 76px;
-  display: flex;
-  flex-direction: column;
 }
 
 a {
@@ -20,9 +18,9 @@ header {
   height: 60px;
   background-color: rgb(53, 53, 53);
   border-bottom: 2px solid rgba(51, 51, 51, 0.473);
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
   padding: 8px;
   display: flex;
   align-items: center;
@@ -114,6 +112,20 @@ ul > li > a:hover {
   position: relative;
   margin-left: 90px;
   margin-right: 90px;
+  margin-top: 0;
+}
+#home > .background-text {
+  font-size: 8rem;
+  font-weight: 700;
+  opacity: 0.3;
+  -webkit-text-fill-color: #0a0a0a00;
+  -webkit-text-stroke: 5px hsla(0, 0%, 78%, 0.176);
+  position: absolute;
+  top: 60px;
+  left: 30%;
+  letter-spacing: 6px;
+  z-index: 0;
+  color: rgb(0, 0, 0);
 }
 
 .home-info {
