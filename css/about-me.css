@@ -1,36 +1,11 @@
-/* button {
-  background-color: #ffb300;
-  border-radius: 10px;
-  font-weight: 800;
-  margin-left: 380px;
-} */
-/* 
-.menu-bar .menu-item {
-    display: inline-block;
-    text-align: left;
-  }
-  .menu-bar {
-    word-spacing: 30px;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: "Poppins", Arial, sans-serif;
-    text-transform: uppercase;
-    padding: 3px;
-  }
-  .img {
-    object-fit: cover;
-    width: 300px;
-  }
-  #desc {
-    width: 110px;
-    font-size: 19px;
-    padding: 2px;
-  }
-  #content {
-    width: 400px;
-    font-size: 17px;
-    padding: 3px;
-  } 
-    h1{
-    style="text-shadow: 7px 8px 10px black"
-    }*/
+#aboutMe {
+  width: 100%;
+  height: auto;
+  background-color: rgb(26, 26, 26);
+  position: relative;
+  top: 70px;
+}
+
+.about-content {
+  display: flex;
+}
