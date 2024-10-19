@@ -1,0 +1,125 @@
+#services {
+  width: 100%;
+  height: fit-content;
+  color: white;
+  /* background-color: rgb(26, 26, 26);*/
+  position: relative;
+  top: 100px;
+}
+
+.Services-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 90px;
+  margin-right: 90px;
+  padding: 20px;
+}
+
+.text-services {
+  font-size: 3rem;
+  color: rgba(121, 54, 165, 0.774);
+  font-weight: 700;
+  margin: 30px 10px 10px;
+  text-align: center;
+  padding: 20px;
+}
+.service-description {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.service-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  width: 250px;
+  height: auto;
+  border: 2px solid rgba(211, 180, 180, 0.473);
+  border-radius: 10px;
+  padding: 30px 35px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+.card-header {
+  display: flex;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #a855f7;
+  margin-right: 20px;
+  text-align: center;
+}
+
+i {
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+}
+.card1-title {
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #a855f7, #f8f8f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+}
+
+.card2-title {
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #55d12f, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-description {
+  font-size: 1.2rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.Read-more-btn {
+  padding: 10px 20px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 20px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.btn1 {
+  background-color: #4d1a88;
+}
+.btn1:hover {
+  background-color: #7c6097;
+  cursor: pointer;
+}
+
+.btn2 {
+  background-color: #19941f;
+}
+.btn2:hover {
+  background-color: #6cb456;
+  cursor: pointer;
+}

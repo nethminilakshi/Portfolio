@@ -1,7 +1,6 @@
 #aboutMe {
   width: 100%;
-  height: auto;
-  background-color: rgb(26, 26, 26);
+  height: fit-content;
   position: relative;
   top: 100px;
 }
@@ -30,7 +29,7 @@
 }
 .shadow-box {
   position: relative;
-  top: 435px;
+  top: 430px;
   left: 100px;
   width: 90px;
   height: 90px;
@@ -47,7 +46,6 @@
   margin-left: 60px;
 }
 .text-about {
-  /* margin: 10px 70px 30px; */
   color: #8750f7;
   font-size: 3rem;
   font-weight: 700;
@@ -58,7 +56,7 @@ h3 {
   margin: 0;
 }
 .description {
-  color: rgb(185, 185, 185);
+  color: rgb(151, 151, 151);
   font-size: 1.4rem;
   margin: 0;
 }
