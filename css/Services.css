@@ -44,7 +44,11 @@
   padding: 30px 35px;
   cursor: pointer;
   position: relative;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
+}
+
+.card:hover {
+  transform: translateY(-15px);
 }
 .card-header {
   display: flex;
@@ -53,18 +57,34 @@
 .icon-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  border: 2px solid #a855f7;
   margin-right: 20px;
-  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.icon-container:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.icon-1 {
+  border: 2px solid #7423aa;
+}
+.icon-2 {
+  border: 2px solid #55d12f;
+}
+.icon-3 {
+  border: 2px solid #7423aa;
 }
 
 i {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 .card1-title {
   font-size: 1.5rem;
