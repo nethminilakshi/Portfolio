@@ -1,15 +1,143 @@
-/* .menu-bar .menu-item {
-  display: inline-block;
-  text-align: left;
+#contact {
+  position: relative;
+  top: 100px;
+  height: fit-content;
+  width: 100%;
+  background-color: black;
 }
-.menu-bar {
-  word-spacing: 30px;
-  font-size: 15px;
-  font-weight: bold;
-  font-family: "Poppins", Arial, sans-serif;
-  text-transform: uppercase;
-  padding: 3px;
+
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+  padding: 10px;
+  position: relative;
+  top: 100px;
 }
-  h1{
-  style="text-shadow: 7px 8px 10px black"
-  } */
+.text-contact {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #3f0872, #e7dbdb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  font-weight: 700;
+  margin: 30px 10px 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-info-box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  font-size: 1.2rem;
+  color: rgb(97, 97, 97);
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-box {
+  width: 250px;
+  height: auto;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.contact-box:hover {
+  transform: scale(1.1);
+}
+
+.box1 {
+  border: 1px solid rgb(83, 5, 107);
+  background-color: rgb(17, 17, 17);
+}
+.box2 {
+  border: 1px solid rgb(67, 62, 139);
+  background-color: rgb(17, 17, 17);
+}
+.box3 {
+  border: 1px solid rgb(49, 161, 5);
+  background-color: rgb(17, 17, 17);
+}
+
+.contact-box > i {
+  margin: 5px 0px;
+  color: white;
+}
+.contact-box > p {
+  margin: 5px;
+  color: white;
+}
+
+.send-btn1 {
+  height: 40px;
+  width: 122px;
+  margin: 10px;
+  background-color: rgb(83, 5, 107);
+  border-radius: 10px;
+  border: none;
+}
+
+.send-btn2 {
+  height: 40px;
+  width: 122px;
+  margin: 10px;
+  background-color: rgb(32, 91, 131);
+  border-radius: 10px;
+  border: none;
+}
+.send-btn3 {
+  height: 40px;
+  width: 122px;
+  margin: 10px;
+  background-color: rgb(43, 201, 69);
+  border-radius: 10px;
+  border: none;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#name,
+#email,
+#message {
+  color: rgb(175, 172, 172);
+  font-size: 1.2rem;
+  display: flex;
+  background-color: rgb(17, 17, 17);
+  border-radius: 10px;
+  margin: 15px;
+}
+.contactBtn {
+  background-color: rgb(21, 52, 119);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 10px;
+  width: 200px;
+  cursor: pointer;
+  position: relative;
+  left: 25%;
+  transition: all 0.4s ease-in-out;
+}
+
+.contactBtn:hover {
+  background-color: rgb(15, 71, 90);
+  width: 250px;
+}

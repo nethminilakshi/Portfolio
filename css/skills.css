@@ -27,6 +27,7 @@
   text-align: center;
   padding: 10px;
 }
+
 .skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
