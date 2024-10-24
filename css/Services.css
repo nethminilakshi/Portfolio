@@ -11,8 +11,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: 8%;
+  margin-right: 8%;
   padding: 20px;
 }
 
@@ -32,11 +32,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .card {
-  width: 250px;
+  width: 70%;
   height: auto;
   border: 2px solid rgba(211, 180, 180, 0.473);
   border-radius: 10px;
@@ -85,7 +85,8 @@ i {
   margin: 0;
   text-align: center;
 }
-.card1-title {
+.card1-title,
+.card3-title {
   font-size: 1.5rem;
   background: linear-gradient(90deg, #a855f7, #f8f8f8);
   -webkit-background-clip: text;
@@ -141,4 +142,167 @@ i {
 .btn2:hover {
   background-color: #6cb456;
   cursor: pointer;
+}
+
+/* @media screen and (min-width: 1440px) {
+  .Services-content {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .text-services {
+    font-size: 4.2rem;
+    color: rgba(61, 47, 190, 0.774);
+  }
+  .service-description {
+    font-size: 1.9rem;
+  }
+
+  .card {
+    width: 80%;
+    border: 2px solid rgba(160, 149, 149, 0.473);
+  }
+  .icon-container:hover {
+    transform: scale(1.5);
+  }
+  .card-description {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+  i {
+    font-size: 2.4rem;
+  }
+  .card1-title,
+  .card2-title,
+  .card3-title {
+    font-size: 1.8rem;
+  }
+
+  .Read-more-btn {
+    width: 70%;
+    height: auto;
+    font-size: 1.1rem;
+  }
+} */
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .site-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100vh;
+  }
+  .text-services {
+    font-size: 2.5rem;
+    margin: 50px 10px 10px;
+    padding: 20px 0px 0px;
+  }
+  .service-description {
+    font-size: 1.2rem;
+  }
+  .service-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 70%;
+    padding: 20px;
+    border: 2px solid rgba(160, 149, 149, 0.473);
+  }
+  .icon-container {
+    height: 50px;
+    width: 50px;
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+  .card1-title,
+  .card2-title,
+  .card3-title {
+    font-size: 1.2rem;
+  }
+  .card-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  #services {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .text-services {
+    margin-top: 80px;
+    font-size: 3.3rem;
+  }
+
+  .Services-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .service-description {
+    font-size: 2rem;
+    width: auto;
+  }
+  .service-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .card {
+    height: auto;
+    width: calc(100% - 8%);
+  }
+
+  .icon-container {
+    height: 60px;
+    width: 60px;
+  }
+
+  i {
+    font-size: 2.5rem;
+  }
+  .card1-title,
+  .card2-title,
+  .card3-title {
+    font-size: 2.3rem;
+  }
+  .card-description {
+    font-size: 1.7rem;
+  }
+
+  .Read-more-btn {
+    width: 70%;
+    height: auto;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .btn1:hover {
+    background: linear-gradient(90deg, #360266, #8cc2da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .btn2:hover {
+    background: linear-gradient(90deg, #065016, #8cc2da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }

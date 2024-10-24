@@ -7,6 +7,11 @@ body {
 .site-container {
   position: absolute;
   top: 76px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  height: 100%;
 }
 
 a {
@@ -14,7 +19,7 @@ a {
 }
 header {
   width: 100%;
-  height: auto;
+  height: 50px;
   background-color: rgb(53, 53, 53);
   border-bottom: 2px solid rgba(51, 51, 51, 0.473);
   padding: 8px;
@@ -29,6 +34,26 @@ header {
   color: rgb(194, 194, 194);
 }
 
+.img-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#hire-meBtn {
+  background-color: #4f0b8f;
+  color: white;
+  font-size: 1.2rem;
+  display: none;
+  border-radius: 8px;
+  border: none;
+  width: 120px;
+  height: 30px;
+}
+
+#burger {
+  display: none;
+}
 .navigation-bar > ul {
   display: flex;
   list-style: none;
@@ -49,11 +74,13 @@ ul > li > a:hover {
 }
 .logo-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-left: 30px;
 }
-
+.menu-container {
+  display: flex;
+}
 .menu-panel {
   width: 25%;
   height: 100%;
@@ -101,13 +128,14 @@ ul > li > a:hover {
   position: relative;
   top: 70px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
 }
 #home {
   position: relative;
-  /* margin-left: 90px;
-  margin-right: 90px; */
+  height: auto;
+  margin-left: 8%;
+  margin-right: 8%;
   margin-top: 0;
 }
 #home > .background-text {
@@ -139,7 +167,7 @@ ul > li > a:hover {
   margin: 5px 0px;
 }
 .primaty-title {
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin: 15px 0px;
   background: linear-gradient(90deg, #a855f7, #8cc2da);
   -webkit-background-clip: text;
@@ -148,7 +176,7 @@ ul > li > a:hover {
   font-weight: 900;
 }
 
-.description {
+.home-description {
   font-size: 1.25rem;
   font-weight: 500;
   color: rgb(189, 189, 189);
@@ -166,6 +194,9 @@ ul > li > a:hover {
   background-color: #5a37f8;
   border: none;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn > a {
   text-decoration: none;
@@ -179,52 +210,65 @@ ul > li > a:hover {
   cursor: pointer;
 }
 .profile-image {
-  width: 300px;
-  height: 300px;
-  margin-right: 10%;
-  /* border-radius: 50%; */
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
   border: 1px solid rgba(59, 34, 34, 0.473);
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .site-container {
     overflow-x: hidden;
+    overflow-y: auto;
     width: 100%;
     height: 100vh;
   }
-  header {
-    width: 100%;
-    height: auto;
-    background-color: rgb(53, 53, 53);
-    border-bottom: 2px solid rgba(51, 51, 51, 0.473);
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 
+  #home {
+    position: relative;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 0;
+  }
   .menu-panel {
     display: none;
   }
-  .calling-name {
-    margin-left: 20px;
-    font-weight: 600;
-    color: rgb(194, 194, 194);
+  .navigation-bar > ul > li > a {
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: white;
   }
-  .home-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .img-logo {
+    display: none;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+  .primaty-title {
+    font-size: 4rem;
+  }
+  .home-description {
+    font-size: 1.8rem;
+  }
+  .contact-btn {
+    width: 250px;
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
+  .profile-image {
     width: 30%;
-    height: fit-content;
-    margin: 20px 5px;
+    height: 30%;
   }
-}
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-}
+} */
+/* @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    overflow-x: hidden;
+  }
+} */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 }
@@ -232,8 +276,197 @@ ul > li > a:hover {
 @media screen and (min-width: 425px) and (max-width: 768px) {
 }
 
-@media screen and (min-width: 325px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .site-container {
+    overflow-x: hidden;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .background-text {
+    display: none;
+  }
+
+  .menu-container {
+    display: flex;
+    margin-left: 110px;
+  }
+  .img-logo {
+    display: block;
+
+    width: 50px;
+    height: 50px;
+  }
+
+  header {
+    width: 100%;
+  }
+  .calling-name {
+    display: none;
+  }
+  #hire-meBtn {
+    display: block;
+  }
+  #home {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .home-info {
+    margin: 0px 5px;
+  }
+
+  #burger {
+    display: block;
+    font-size: 1.4rem;
+    margin-left: 20px;
+  }
+  .navigation-bar {
+    display: none;
+  }
+
+  .name {
+    font-size: 1.3rem;
+    margin: 0px;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .primaty-title {
+    font-size: 2rem;
+    margin: 5px;
+    margin: 0px;
+  }
+  .home-description {
+    font-size: 1.2rem;
+    padding: 0px;
+
+    margin: 10px 0px;
+  }
+  .contact-btn {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn {
+    width: 40px;
+    height: 10px;
+    font-size: 0.2rem;
+  }
+  .btn > a {
+    font-size: 0.4rem;
+    text-align: center;
+  }
+
+  .home-content {
+    width: 100%;
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .profile-image {
+    margin: 20px 0px;
+    margin-left: 80px;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid rgba(59, 34, 34, 0.473);
+  }
 }
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  body {
+    overflow-x: hidden !important;
+    width: 100%;
+    height: 100vh;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  #home {
+    width: 100%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 0;
+  }
+
+  .home-content {
+    width: 100%;
+    position: relative;
+    top: 70px;
+  }
+
+  .home-info {
+    width: 90%;
+  }
+  .navigation-bar {
+    display: none;
+  }
+  .home-info {
+    width: calc(100% - 80px) !important;
+  }
+  .name {
+    font-size: 1.8rem;
+  }
+  .profile-image {
+    width: 60%;
+    height: fit-content;
+    object-fit: cover;
+    margin-top: 80px;
+    border: 1px solid rgba(59, 34, 34, 0.473);
+  }
+
+  .primaty-title {
+    font-size: 3.8rem;
+  }
+
+  .home-description {
+    font-size: 2.3rem;
+    width: 450px;
+    margin-top: 40px;
+  }
+
+  .contact-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+  }
+  .btn {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  header {
+    width: 100%;
+    height: 80px;
+  }
+  .img-logo {
+    height: 70px;
+    width: 70px;
+  }
+  .calling-name {
+    font-size: 2.5rem;
+  }
+  .navigation-bar > ul > li > a {
+    font-size: 1.5rem;
+    padding: 0px 12px;
+  }
 }
