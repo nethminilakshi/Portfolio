@@ -184,6 +184,47 @@ i {
   }
 } */
 
+@media screen and (max-width: 320px) {
+  #services {
+    width: calc(100% - 20px);
+    top: 50px;
+  }
+
+  .Services-content {
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 10px;
+  }
+
+  .text-services {
+    font-size: 1.8rem;
+    margin: 15px 5px 5px;
+    padding: 10px;
+  }
+
+  .service-description {
+    font-size: 1.1rem;
+  }
+
+  .service-card-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 5px;
+  }
+
+  .card {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+
+  .icon-container {
+    display: none;
+  }
+
+  .card-description {
+    font-size: 0.8rem;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 375px) {
   body {
     overflow-x: hidden !important;
@@ -216,13 +257,9 @@ i {
     border: 2px solid rgba(160, 149, 149, 0.473);
   }
   .icon-container {
-    height: 50px;
-    width: 50px;
+    display: none;
   }
 
-  i {
-    font-size: 1.5rem;
-  }
   .card1-title,
   .card2-title,
   .card3-title {
@@ -304,5 +341,179 @@ i {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #services {
+    top: 60px;
+  }
+
+  .Services-content {
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 15px;
+  }
+
+  .text-services {
+    font-size: 2.2rem;
+    margin: 20px 5px 5px;
+    padding: 15px;
+  }
+
+  .service-description {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .service-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 5px;
+  }
+
+  .card {
+    width: 85%;
+    padding: 20px 25px;
+    margin: 0 auto;
+  }
+
+  .card-header {
+    justify-content: center;
+  }
+
+  .icon-container {
+    height: 50px;
+    width: 50px;
+  }
+
+  i {
+    font-size: 1.8rem;
+  }
+
+  .card1-title,
+  .card2-title,
+  .card3-title {
+    font-size: 1.3rem;
+  }
+
+  .card-description {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .Read-more-btn {
+    padding: 8px 16px;
+    width: 110px;
+    height: 36px;
+    font-size: 0.85rem;
+    margin-top: 15px;
+  }
+
+  /* Adjust hover effects for touch devices */
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+  .icon-container:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .text-services {
+    font-size: 3.8rem;
+    padding-top: 25px;
+  }
+  .service-description {
+    font-size: 2.2rem;
+    color: gray;
+  }
+  .service-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .card {
+    width: 80%;
+  }
+  .card1-title,
+  .card2-title,
+  .card3-title {
+    font-size: 2.2rem;
+  }
+  .card-description {
+    font-size: 1.8rem;
+    font-weight: 200px;
+  }
+  .Read-more-btn {
+    width: 60%;
+    height: auto;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  #services {
+    padding: 80px 0px;
+  }
+  .Services-content {
+    margin: 0;
+    padding: 10px 80px;
+  }
+  .text-services {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  .service-description {
+    font-size: 1.4rem;
+  }
+  .service-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .card {
+    width: 80% !important;
+    height: auto;
+    padding: 25px;
+    transition: all 0.9s ease-in-out;
+  }
+  .card:hover {
+    transform: translateY(-18px);
+    box-shadow: 0 0 10px rgba(65, 65, 65, 0.5);
+    background-color: rgb(65, 65, 65);
+  }
+  .card1-title,
+  .card2-title,
+  .card3-title {
+    font-size: 2rem;
+  }
+  .card-description {
+    font-size: 1.2rem !important;
+    font-weight: 200px;
+  }
+
+  .icon-container {
+    height: 70px;
+    width: 70px;
+  }
+  .icon-container:hover {
+    transform: scale(1.1);
+  }
+
+  .Read-more-btn {
+    height: auto;
+    font-size: 1rem !important;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .btn1:hover {
+    background: linear-gradient(90deg, #33033f, #a844a8);
+    width: 60%;
+  }
+  .btn2:hover {
+    background: linear-gradient(90deg, #0e6812, #40b35f);
+    width: 60%;
   }
 }

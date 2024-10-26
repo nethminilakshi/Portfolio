@@ -16,7 +16,7 @@
 }
 
 .profile-pic {
-  width: 28%;
+  width: 22%;
   height: auto;
   margin-top: 30px;
   object-fit: cover;
@@ -95,13 +95,152 @@ h3 {
     font-size: 1.8rem;
   }
 } */
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  #aboutMe {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    top: 60px;
+  }
+
+  .about-content {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: calc(100% - 40px);
+    margin-top: 15px;
+    border-width: 1.5px;
+    padding: 0;
+    transform: rotate(0deg);
+  }
+
+  /* Adjust shadow box for mobile */
+  .shadow-box {
+    display: none;
+  }
+
+  /* Disable hover animation on mobile */
+  .profile-pic:hover {
+    transform: none;
+  }
+
+  .about-info {
+    padding: 10px;
+    margin-left: 5px;
+    width: calc(100% - 20px);
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-about {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin: 0.8rem 0;
+    text-align: center;
+    width: calc(100% - 20px);
+  }
+
+  .description {
+    font-size: 1rem;
+    margin: calc(1rem - 0.2rem) 0;
+    line-height: calc(1.6 - 0.2);
+    width: calc(100% - 20px);
+  }
+
+  /* Additional mobile optimizations */
+  .about-content > * {
+    margin-bottom: 1.2rem;
+  }
+
+  /* Ensure proper spacing between elements */
+  .about-info > * {
+    margin-bottom: 0.8rem;
+  }
+
+  /* Improve readability */
+  .description {
+    letter-spacing: 0.7px;
+  }
+
+  /* Add some breathing room */
+  .about-content {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Optimize container spacing */
+  #aboutMe {
+    padding-bottom: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
+  #aboutMe {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 60px;
+  }
+
+  .about-content {
+    margin-left: 4%;
+    margin-right: 4%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .profile-pic {
+    display: none;
+  }
+
+  .shadow-box {
+    display: none;
+  }
+
+  .profile-pic:hover {
+    transform: rotate(0deg);
+  }
+
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    margin-left: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .text-about {
+    color: rgba(61, 47, 190, 0.774);
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .description {
+    color: rgb(151, 151, 151);
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
 }
 
 /* @media screen and (min-width: 375px) and (max-width: 425px) {
@@ -195,5 +334,66 @@ h3 {
   }
   .shadow-box {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile-pic {
+    width: 330px;
+    height: 100%;
+    margin-top: 100px;
+  }
+  .about-info {
+    width: calc(100% - 330px);
+    margin: 0;
+    padding: 0px 40px 0px 60px;
+  }
+  .text-about {
+    font-size: 3.8rem;
+    margin: 0;
+    padding: 20px 0px;
+  }
+  h3 {
+    font-size: 2rem;
+    padding: 30px 0px;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  #aboutMe {
+    background-color: rgb(49, 49, 49);
+  }
+  .about-content {
+    margin: 0;
+    padding: 40px 80px 70px 80px;
+  }
+  .profile-pic {
+    margin: 0;
+  }
+  .about-info {
+    padding: 0;
+  }
+  .text-about {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0px 0px 30px;
+  }
+  .shadow-box {
+    position: relative;
+    top: 350px;
+    left: 50px;
+  }
+  .about-title {
+    font-size: 1.4rem;
+    padding: 5px 0px 18px 0px;
+  }
+  .description {
+    font-size: 1.2rem;
+    color: white;
   }
 }

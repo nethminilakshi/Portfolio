@@ -169,7 +169,7 @@ ul > li > a:hover {
 .primaty-title {
   font-size: 4rem;
   margin: 15px 0px;
-  background: linear-gradient(90deg, #a855f7, #8cc2da);
+  background: linear-gradient(90deg, #5606a0, #5f7781);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -270,14 +270,158 @@ ul > li > a:hover {
   }
 } */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-}
+@media screen and (max-width: 320px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+  .site-container {
+    top: 60px;
+    height: calc(100% - 60px);
+  }
+
+  header {
+    height: 40px;
+  }
+
+  .calling-name {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .img-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Show burger menu and hide navigation */
+  #burger {
+    display: block;
+    margin-right: 15px;
+  }
+
+  .navigation-bar {
+    display: none;
+  }
+
+  /* Adjust menu panel for small screens */
+  .menu-panel {
+    width: calc(100% - 40px);
+    padding: 20px 15px;
+  }
+
+  .name {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+
+  .side-navigation-bar {
+    gap: 10px;
+  }
+
+  .side-navigation-bar > ul > li {
+    padding: 8px 0;
+  }
+
+  .side-navigation-bar > ul > li > a {
+    font-size: 1rem;
+  }
+
+  /* Home section adjustments */
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+  }
+
+  #home {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  #home > .background-text {
+    font-size: 3rem;
+    -webkit-text-stroke: 3px;
+    top: 40px;
+    left: 15%;
+    letter-spacing: 4px;
+  }
+
+  .home-info {
+    width: calc(100% - 20px);
+    margin: 15px 4px;
+  }
+
+  .primaty-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  .home-description {
+    font-size: 1rem;
+    padding: 10px 4px;
+  }
+
+  .contact-btn {
+    margin: 8px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .btn {
+    width: 130px;
+    height: 40px;
+  }
+
+  .btn > a {
+    font-size: 0.9rem;
+  }
+
+  .profile-image {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 20px auto;
+  }
+
+  /* Additional mobile optimizations */
+  .logo-container {
+    gap: 5px;
+  }
+
+  #hire-meBtn {
+    width: 90px;
+    height: 25px;
+    font-size: 0.9rem;
+  }
+
+  /* Improve touch targets */
+  .side-navigation-bar > ul > li > a,
+  .btn,
+  #burger {
+    padding: 10px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Optimize spacing */
+  * {
+    margin-bottom: 0.8em;
+  }
+
+  /* Ensure text remains readable */
+  .home-description,
+  .name,
+  .calling-name {
+    line-height: 1.3em;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
   body {
+    margin: 0;
     overflow-x: hidden !important;
   }
 
@@ -285,8 +429,10 @@ ul > li > a:hover {
     overflow-x: hidden;
     position: relative;
     top: 0px;
+    left: 0px;
     width: 100%;
     height: 100vh;
+    margin: 0;
   }
 
   .background-text {
@@ -393,9 +539,11 @@ ul > li > a:hover {
   }
 
   header {
+    padding: 8px 4px;
+  }
+  main {
     width: 100%;
   }
-
   #home {
     width: 100%;
     margin-left: 6%;
@@ -449,6 +597,123 @@ ul > li > a:hover {
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+  }
+  .site-container {
+    padding-top: 10px;
+  }
+  header {
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  #burger {
+    display: block;
+    margin-right: 15px;
+  }
+  .navigation-bar {
+    display: none;
+  }
+  .logo-container {
+    width: 100%;
+  }
+  .img-logo {
+    height: 45px;
+    width: 45px;
+  }
+  .calling-name {
+    display: none;
+  }
+  #hire-meBtn {
+    display: block;
+    font-size: 1.1rem;
+    width: 110px;
+    height: 32px;
+  }
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    margin: 0;
+  }
+  #home {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #home > .background-text {
+    font-size: 5rem;
+    -webkit-text-stroke: 4px hsla(0, 0%, 78%, 0.176);
+    top: 40px;
+    left: 25%;
+  }
+  #home > .background-text {
+    font-size: 5rem;
+    -webkit-text-stroke: 4px hsla(0, 0%, 78%, 0.176);
+    top: 40px;
+    left: 25%;
+  }
+  .primaty-title {
+    font-size: 3rem;
+    margin: 15px 0;
+  }
+  .home-info {
+    width: 100%;
+  }
+  .home-description {
+    font-size: 1.2rem;
+    padding: 15px 0;
+    line-height: 1.6;
+  }
+  .contact-btn {
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+  }
+
+  .btn {
+    width: 110px;
+    height: 40px;
+    padding: 10px 20px;
+  }
+
+  .btn > a {
+    font-size: 1rem;
+  }
+  .menu-panel {
+    width: 50%;
+    padding: 25px 15px;
+  }
+
+  .side-navigation-bar > ul {
+    padding-left: 0;
+  }
+
+  .side-navigation-bar > ul > li {
+    padding: 12px 0;
+  }
+
+  .side-navigation-bar > ul > li > a {
+    font-size: 1.1rem;
+  }
+
+  .name {
+    font-size: 1.3rem;
+    margin: 10px 0;
+  }
+
+  .logo-container {
+    gap: 15px;
+  }
+
+  .menu-container {
+    gap: 20px;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   body {
@@ -463,10 +728,139 @@ ul > li > a:hover {
     width: 70px;
   }
   .calling-name {
+    margin: 0;
     font-size: 2.5rem;
   }
+  .navigation-bar > ul > li {
+    padding: 0px 15px;
+  }
+
   .navigation-bar > ul > li > a {
-    font-size: 1.5rem;
-    padding: 0px 12px;
+    font-size: 1.8rem;
+  }
+  .home-content {
+    width: 100%;
+    margin: 0;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-info {
+    width: 100%;
+  }
+  .name {
+    padding: 20px 0px;
+    font-size: 2.1rem;
+    width: 100%;
+  }
+  .primaty-title {
+    margin: 0;
+    padding: 0;
+    font-size: 3.8rem;
+  }
+  .home-description {
+    font-size: 1.8rem;
+  }
+  #home > .background-text {
+    position: absolute;
+    top: 170px;
+  }
+  .contact-btn {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+  }
+  .profile-image {
+    padding: 25px 15px;
+    border: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    overflow-x: hidden !important;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+  }
+  #home {
+    margin: 0;
+    padding: 80px 80px;
+  }
+  header {
+    height: 60px;
+  }
+  .img-logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+  }
+  .calling-name {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  .navigation-bar > ul > li {
+    padding: 0px 25px;
+  }
+
+  .navigation-bar > ul > li > a {
+    font-size: 1.4rem;
+  }
+  .navigation-bar > ul > li > a:hover {
+    color: rgb(110, 62, 221);
+    text-decoration: underline rgb(117, 117, 117);
+  }
+
+  .home-content {
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-info {
+    width: 100%;
+  }
+  .name {
+    padding: 20px 0px;
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .primaty-title {
+    font-size: 4.5rem;
+  }
+  #home > .background-text {
+    position: absolute;
+    top: 200px;
+  }
+  .home-description {
+    font-size: 1.4rem;
+  }
+  .contact-btn {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+  }
+  .btn {
+    width: 120px;
+    height: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn:hover {
+    background-color: #8109a5;
+    cursor: pointer;
+    width: 140px;
+  }
+
+  .profile-image {
+    padding: 25px 15px;
+    border: none;
   }
 }
