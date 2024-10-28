@@ -181,68 +181,6 @@ h3 {
     padding-bottom: 1.5rem;
   }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-}
-
-@media screen and (min-width: 425px) and (max-width: 768px) {
-  #aboutMe {
-    width: 100%;
-    height: fit-content;
-    position: relative;
-    top: 60px;
-  }
-
-  .about-content {
-    margin-left: 4%;
-    margin-right: 4%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-  }
-
-  .profile-pic {
-    display: none;
-  }
-
-  .shadow-box {
-    display: none;
-  }
-
-  .profile-pic:hover {
-    transform: rotate(0deg);
-  }
-
-  .about-info {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 20px;
-    margin-left: 0;
-    margin-top: 30px;
-    text-align: center;
-  }
-
-  .text-about {
-    color: rgba(61, 47, 190, 0.774);
-    font-size: 2.2rem;
-    font-weight: 700;
-  }
-
-  h3 {
-    font-size: 1.6rem;
-    font-weight: 300;
-    margin: 0;
-  }
-
-  .description {
-    color: rgb(151, 151, 151);
-    font-size: 1.2rem;
-    margin: 20px 0;
-  }
-}
-
 /* @media screen and (min-width: 375px) and (max-width: 425px) {
   body {
     overflow-x: hidden !important;
@@ -302,66 +240,175 @@ h3 {
   }
 }
 @media screen and (min-width: 376px) and (max-width: 425px) {
-  .profile-pic {
-    width: 350px;
-    height: 100%;
-    cursor: pointer;
-    margin-top: 100px;
-    margin-left: 40px;
+  #aboutMe {
+    width: calc(100% - 20px);
+    top: 50px;
+    margin: 0 auto;
   }
+
   .about-content {
     display: flex;
+
     flex-direction: column-reverse;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 15px;
+    align-items: center;
   }
-  .about-info {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+
+  .profile-pic {
+    width: calc(90% - 20px);
+    height: auto;
+    margin-top: 40px;
+    border-width: 1.5px;
     padding: 0;
+    cursor: pointer;
+    transform: rotate(0deg);
   }
-  .text-about {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 3.3rem;
-    width: 300px;
-  }
-  h3 {
-    font-size: 2rem;
-    margin: 10px;
-  }
-  .description {
-    font-size: 1.8rem;
-    width: calc(100% - 8%);
-  }
+
   .shadow-box {
     display: none;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .about-content {
-    display: flex;
-    justify-content: space-between;
-  }
-  .profile-pic {
-    width: 330px;
-    height: 100%;
-    margin-top: 100px;
-  }
+
   .about-info {
-    width: calc(100% - 330px);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     margin: 0;
-    padding: 0px 40px 0px 60px;
+    width: calc(100% - 20px);
+    align-items: center;
   }
+
   .text-about {
-    font-size: 3.8rem;
-    margin: 0;
-    padding: 20px 0px;
+    font-size: 2.5rem;
+    width: calc(100% - 20px);
+    text-align: center;
+    margin-bottom: 10px;
   }
+
   h3 {
-    font-size: 2rem;
-    padding: 30px 0px;
+    font-size: 1.8rem;
+    margin: 8px;
+    text-align: center;
+    width: calc(100% - 16px);
   }
+
   .description {
+    font-size: 1.4rem;
+    width: calc(100% - 16px);
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.5;
+    padding: 5px;
+  }
+
+  /* Optimize spacing and layout */
+  .about-content > * {
+    margin-bottom: 20px;
+  }
+
+  /* Improve text readability */
+  .description {
+    letter-spacing: 0.5px;
+    color: rgb(151, 151, 151);
+  }
+
+  /* Remove hover effects for better mobile experience */
+  .profile-pic:hover {
+    transform: none;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  #aboutMe {
+    top: 60px;
+    height: auto;
+  }
+
+  .about-content {
+    margin-left: 4%;
+    margin-right: 4%;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 30px;
+  }
+
+  .profile-pic {
+    width: 50%;
+    margin-top: 30px;
+    transform: rotate(0deg);
+  }
+
+  .profile-pic:hover {
+    transform: rotate(-3deg);
+  }
+
+  .shadow-box {
+    display: none;
+  }
+
+  .about-info {
+    padding: 0 25px;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text-about {
+    font-size: 2.25rem;
+    margin-bottom: 15px;
+  }
+
+  h3 {
     font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    padding: 0 8px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #aboutMe {
+    top: 70px;
+  }
+
+  .about-content {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 15px;
+  }
+
+  .profile-pic {
+    width: 30%;
+    margin-top: 20px;
+  }
+
+  .shadow-box {
+    top: 350px;
+    left: 70px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .about-info {
+    padding: 0px 40px;
+    margin-left: 30px;
+  }
+
+  .text-about {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {

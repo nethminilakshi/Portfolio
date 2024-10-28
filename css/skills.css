@@ -183,15 +183,14 @@
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
   #skills {
-    width: 100%;
     top: 60px;
   }
 
   .skills-content {
     margin-left: 4%;
     margin-right: 4%;
-    padding: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
+    padding: 8px;
   }
 
   .text-skills {
@@ -201,25 +200,19 @@
   }
 
   .skills-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    grid-template-columns: 1fr;
     margin: 20px 0px;
-  }
-
-  .skills-container > *:last-child {
-    grid-column: 1 / -1;
-    width: 80%;
-    margin: 0 auto;
+    gap: 25px;
+    justify-items: center;
   }
 
   .skills-box {
     width: 90%;
-    margin: 0 auto;
     padding: 12px;
   }
 
   .box-header {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   .box-title {
@@ -231,45 +224,51 @@
   }
 
   .skills-list > ul > li {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     padding: 6px;
-  }
-
-  /* Enhance touch interaction */
-  .skills-box:hover {
-    transition: all 0.3s ease-in-out;
-    background-color: rgb(35, 35, 35);
-    border: 2px solid rgb(119, 47, 153);
-    transform: translateY(-5px);
-  }
-
-  /* Add some spacing between boxes for better visual separation */
-  .skills-box:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
-  .skills-list > ul > li {
-    color: rgb(190, 190, 190);
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  #skills {
+    top: 70px; /* Reduced top spacing */
+  }
+
+  .skills-content {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 8px;
+  }
+
   .text-skills {
-    font-size: 3.8rem;
-  }
-  .skills-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-  .box-title {
-    font-size: 2.6rem;
-    font-weight: 700;
-  }
-  .skills-list > ul > li {
     font-size: 2.2rem;
-    font-weight: 500;
-    color: rgb(216, 216, 216);
+    margin: 20px 8px;
+    padding: 8px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr 1fr; /* Change to 2 columns */
+    gap: 20px;
+    margin: 20px 0px;
+  }
+
+  .skills-box {
+    width: 90%;
+    padding: 12px;
+    margin: 0 auto; /* Center the boxes */
+  }
+
+  .box-header {
+    font-size: 1.2rem;
+  }
+
+  .box-title {
+    padding: 6px;
+  }
+
+  .skills-list > ul > li {
+    font-size: 1.1rem;
+    padding: 6px;
   }
 }
 
