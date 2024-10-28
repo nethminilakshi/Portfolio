@@ -557,7 +557,10 @@
     margin-right: 6%;
     top: 80px;
   }
-
+  .contact-group {
+    display: flex !important;
+    justify-content: space-around;
+  }
   .contact-info-box {
     font-size: 1.4rem;
     color: rgb(97, 97, 97);
@@ -575,6 +578,11 @@
 
   .contact-box > p {
     margin: 8px;
+    font-size: 0.9rem !important;
+  }
+
+  .contact-box > a {
+    font-size: 0.9rem !important;
   }
 
   .send-btn1,
