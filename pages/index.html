@@ -44,9 +44,7 @@
         />
         <div class="menu-container">
           <button id="hire-meBtn">Hire Me</button>
-          <nav class="navbar">
-            <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
-          </nav>
+          <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
         </div>
 
         <h3 class="calling-name">Nethmi</h3>
@@ -54,7 +52,7 @@
 
       <nav class="navigation-bar">
         <ul>
-          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/index.html">Home</a></li>
           <li><a href="#aboutMe">AboutMe</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -71,13 +69,14 @@
             <button class="close-btn" id="btn-close">&times;</button>
             <ul>
               <li><a href="/index.html">Home</a></li>
-              <li><a href="#aboutMe">About Me</a></li>
+              <li><a href="#aboutMe">About Us</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="#skills">Skills</a></li>
+              <li><a href="#skills">Services</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
+
           <div class="home-content">
             <div class="home-info">
               <p class="name">
@@ -95,7 +94,12 @@
                 </p>
               </div>
               <div class="contact-btn">
-                <button class="btn"><a href="#">LinkedIn</a></button>
+                <button class="btn">
+                  <a
+                    href="https://www.linkedin.com/in/nethmi-nilakshi-8b9ba3290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app "
+                    >LinkedIn</a
+                  >
+                </button>
                 <button class="btn">
                   <a href="mailto: nilakshinethmi48@gmail.com">Email Me</a>
                 </button>
@@ -383,7 +387,19 @@
       </div>
     </main>
 
-    <script src="/JS/home.js"></script>
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+
+      burger.addEventListener("click", () => {
+        menuPanel.classList.toggle("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
     <script src="/JS/contact.js"></script>
   </body>
 </html>

@@ -864,127 +864,127 @@ ul > li > a:hover {
   }
 
   .site-container {
-    top: calc(70px);
+    top: 70px;
     height: calc(100% - 70px);
     width: calc(100% - 20px);
   }
 
   header {
-    width: calc(100%);
-    height: calc(45px);
+    width: 100%;
+    height: 45px;
   }
   .navigation-bar > ul > li {
     padding: 0 0 0 8px;
   }
 
   .logo-container {
-    gap: calc(8px);
-    width: calc(30%);
+    gap: 8px;
+    width: 30%;
   }
 
   .calling-name {
-    margin-left: calc(15px);
-    font-size: calc(1.1rem);
+    margin-left: 15px;
+    font-size: 1.1rem;
     padding: 5px 0px;
   }
 
   .img-logo {
-    width: calc(35px);
-    height: calc(35px);
+    width: 35px;
+    height: 35px;
   }
 
   .navigation-bar > ul {
-    gap: calc(15px);
+    gap: 15px;
   }
 
   .navigation-bar > ul > li {
-    padding: calc(0px 15px);
+    padding: 0px 15px;
   }
 
   .navigation-bar > ul > li > a {
-    font-size: calc(1.1rem);
+    font-size: 1.1rem;
   }
 
   .home-content {
-    top: calc(60px);
+    top: 60px;
     width: calc(100% - 30px);
-    gap: calc(20px);
+    gap: 20px;
   }
 
   #home {
-    margin-left: calc(6%);
-    margin-right: calc(6%);
+    margin-left: 6%;
+    margin-right: 6%;
   }
 
   #home > .background-text {
-    font-size: calc(6rem);
-    -webkit-text-stroke: calc(4px);
-    top: calc(50px);
-    left: calc(25%);
-    letter-spacing: calc(5px);
+    font-size: 6rem;
+    -webkit-text-stroke: 4px;
+    top: 50px;
+    left: 25%;
+    letter-spacing: 5px;
   }
 
   .home-info {
-    width: calc(50%);
-    margin: calc(15px 5px);
+    width: 50%;
+    margin: 15px 5px;
   }
 
   .name {
-    font-size: calc(1.1rem);
-    margin: calc(4px 0px);
+    font-size: 1.1rem;
+    margin: 4px 0px;
   }
 
   .primaty-title {
-    font-size: calc(3rem);
-    margin: calc(12px 0px);
+    font-size: 3rem;
+    margin: 12px 0px;
   }
 
   .home-description {
-    font-size: calc(1.15rem);
-    padding: calc(15px 4px);
+    font-size: 1.15rem;
+    padding: 15px 4px;
   }
 
   .contact-btn {
-    margin: calc(8px);
-    gap: calc(15px);
+    margin: 8px;
+    gap: 15px;
   }
 
   .btn {
-    width: calc(120px);
-    height: calc(45px);
-    padding: calc(8px 16px);
+    width: 120px;
+    height: 45px;
+    padding: 8px 16px;
   }
 
   .btn > a {
-    font-size: calc(1rem);
+    font-size: 1rem;
   }
 
   .profile-image {
-    width: calc(40%);
+    width: 40%;
     height: auto;
   }
 
   .menu-panel {
-    width: calc(30%);
-    padding: calc(25px 15px);
+    width: 30%;
+    padding: 25px 15px;
   }
 
   .side-navigation-bar {
-    gap: calc(12px);
+    gap: 12px;
   }
 
   .side-navigation-bar > ul > li {
-    padding: calc(8px 0px);
+    padding: 8px 0px;
   }
 
   .side-navigation-bar > ul > li > a {
-    font-size: calc(1.1rem);
+    font-size: 1.1rem;
   }
 
   #hire-meBtn {
-    width: calc(110px);
-    height: calc(28px);
-    font-size: calc(1rem);
+    width: 110px;
+    height: 28px;
+    font-size: 1rem;
   }
 
   * {

@@ -542,55 +542,64 @@
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .contact-content {
-    display: flex;
-    justify-content: space-between;
+  #contact {
+    top: 80px;
   }
-  .contact-group {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
+
   .text-contact {
-    font-size: 2.5rem;
-    margin: 10px;
-    padding: 10px 0px 0px;
+    font-size: 3.2rem;
+    margin: 25px 8px 8px;
   }
-  .contact-description {
-    font-size: 1.2rem;
-    color: rgb(196, 194, 194);
+
+  .contact-content {
+    gap: 25px;
+    margin-left: 6%;
+    margin-right: 6%;
+    top: 80px;
   }
+
   .contact-info-box {
-    width: calc(100% / 3);
+    font-size: 1.4rem;
+    color: rgb(97, 97, 97);
   }
+
   .contact-box {
-    height: auto;
-    margin: 10px;
+    padding: 15px 25px;
+    margin: 12px;
   }
+
+  .contact-box:hover {
+    transform: scale(1.08);
+    background-color: rgb(25, 25, 25);
+  }
+
   .contact-box > p {
-    font-size: 0.8rem;
-  }
-  .contact-box > a {
-    font-size: 0.8rem !important;
+    margin: 8px;
   }
 
   .send-btn1,
   .send-btn2,
   .send-btn3 {
-    width: 100px;
-    transition: all 0.8s ease-in-out;
+    height: 45px;
+    width: 126px;
+    margin: 12px;
   }
 
-  .send-btn1:hover {
-    width: 120px;
-    background: linear-gradient(90deg, #7f2396, #a08ca0);
+  #name,
+  #email,
+  #message {
+    font-size: 1.4rem;
+    margin: 12px;
   }
-  .send-btn2:hover {
-    width: 120px;
-    background: linear-gradient(90deg, #0c0c69, #6872a0);
+
+  .contactBtn {
+    font-size: 1.2rem;
+    width: 180px;
+    height: 40px;
+    padding: 10px 25px;
   }
-  .send-btn3:hover {
-    width: 120px;
-    background: linear-gradient(90deg, #078017, #8dce96);
+
+  .contactBtn:hover {
+    transform: scale(1.15);
   }
 }
